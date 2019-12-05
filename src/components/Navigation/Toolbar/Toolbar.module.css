@@ -1,0 +1,23 @@
+.Toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    z-index: 2;
+    background: rgb(255, 254, 254);
+    color: black;
+}
+button:hover {
+    cursor: pointer;
+}
+.NavItems ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.NavItems li{
+    padding-right: 4em;
+}
