@@ -1,23 +1,79 @@
 .Toolbar {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     position: fixed;
     width: 100vw;
-    height: 7vh;
+    height: 7%;
+    padding-left: 0em;
     z-index: 2;
     background: rgb(255, 254, 254);
-    color: black;
 }
-button:hover {
-    cursor: pointer;
+
+.NavItems {
+    display: flex;
+    justify-content: center;
+    margin-right: 0em;
 }
 .NavItems ul{
     display: flex;
     text-decoration: none;
     list-style: none;
 }
-
 .NavItems li{
-    padding-right: 4em;
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(94, 93, 93);
+}
+a:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+@media (min-width: 768px) {
+
+    .Toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 7%;
+        padding-left: .5em;
+        z-index: 2;
+        background: rgb(255, 254, 254);
+    }
+    .Logo {
+        padding-top: .5em;
+        padding-left: 2em;
+        width: 7vw;
+    }
+    .Logo img{
+        width: 100%;
+    }
+    .NavItems {
+        display: flex;
+        justify-content: space-between;
+        margin-right: .5em;
+    }
+    .NavItems ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+    }
+    .NavItems li{
+        padding: 2em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(94, 93, 93);
+    }
+    a:hover {
+        cursor: pointer;
+        color: orange;
+    }
 }
