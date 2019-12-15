@@ -48,6 +48,7 @@ body {
 }
 .Heading a:hover{
   cursor: pointer;
+  color: orange;
 }
 .Creds {
   padding-top: .5em;
