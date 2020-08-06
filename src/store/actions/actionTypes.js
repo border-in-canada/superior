@@ -1,0 +1,14 @@
+export const AUTH_START = 'AUTH_START';
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const AUTH_FAIL = 'AUTH_FAIL';
+export const AUTH_LOGOUT = "AUTH_LOGOUT";
+export const CLEAR_SESSION = "CLEAR_SESSION";
+export const SET_SESSION = "SET_SESSION";
+export const DEBTOR_DETAILS = "DEBTOR_DETAILS";
+export const VEHICLE_DETAILS = "VEHICLE_DETAILS";
+export const ORDER_DETAILS = "ORDER_DETAILS";
+export const ORDER_EDIT = "ORDER_EDIT";
+export const ROW_SELECT = "ROW_SELECT";
+export const DELETE_ORDER_STORE = "DELETE_ORDER_STORE";
+export const PASSWORD_RESET = "PASSWORD_RESET";
+export const GET_USER = "GET_USER";

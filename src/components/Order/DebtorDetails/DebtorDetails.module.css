@@ -1,0 +1,27 @@
+.FormContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;  
+    padding: 0 1em 0 1em;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.ButtonContainer {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .FormContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .ButtonContainer {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
