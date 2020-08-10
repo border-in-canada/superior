@@ -1,0 +1,73 @@
+.SummaryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.Heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.Item {
+    display: inline-block;
+    font-size: 18px;
+    width: 25%;
+}
+
+.ButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0em 2em 0em 0em;
+}
+
+.SubmitContainer {
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4em 0em 0em 0em; 
+}
+
+@media only screen and (max-width: 768px) {
+    .SummaryContainer {
+        display: flex;
+        flex-wrap: wrap;
+        
+        width: 100%;
+        color: white;
+    }
+    
+    .Heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    
+    .Item {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        width: 100%;
+    }
+    
+    .ButtonContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0em 2em 0em 0em;
+    }
+    
+    .SubmitContainer {
+       width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 4em 0em 0em 0em; 
+    }
+
+}

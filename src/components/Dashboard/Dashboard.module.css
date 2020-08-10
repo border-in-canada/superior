@@ -1,0 +1,138 @@
+.Container {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+}
+
+.Container h1{
+    color: white;
+    padding-bottom: .5em;
+}
+
+.Container button {
+    height: 3em;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px 4px rgb(82, 81, 81);
+    background-color: rgb(255, 182, 47);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.Container button:hover {
+    background-color: rgb(250, 172, 28);
+    cursor: pointer;
+    border: none;
+}
+
+.Container p{
+    color: white;
+}
+
+.cardColumnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.cardHeading {
+    width: 100%;
+    height: 40px;
+}
+
+.cardColumn {
+    width: 30%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.cardColumn ul {
+    list-style: none;
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #EDEDED;
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.Card:hover {
+    cursor: pointer;
+    background-color: #fcfafa;
+}
+
+.Card h1 {
+    color: black;
+    line-height: 0;
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 56px;
+    margin-left: 2em;
+}
+
+.GridContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 0em;
+    padding-left: 2em;
+}
+
+.Layout{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Table {
+    width: 90%;
+}
+
+.Pagination {
+    padding-top: 1em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 760px) {
+    .Container {
+        top: 10%;
+    }
+    
+    .Container h1{
+        color: white;
+        font-size: 24px;
+        padding-bottom: 0em;
+    }
+    
+    .Container button {
+        height: 4em;
+        font-size: 12px; 
+    }
+    
+    .cardHeading {
+        height: 1em; 
+    }
+    
+    .Card h1 {
+        color: black;
+    }
+    
+    .GridContainer {
+        padding-left: 1.5em;
+    }
+}

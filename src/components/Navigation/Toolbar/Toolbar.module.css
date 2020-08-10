@@ -1,13 +1,25 @@
 .Toolbar {
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 7%;
     padding-left: 0em;
     z-index: 2;
     background: rgb(255, 254, 254);
+    margin-bottom: 2em;
+}
+
+.Logo {
+    padding-top: .5em;
+    padding-left: 2em;
+    width: 12vw;
+}
+.Logo img{
+    width: 100%;
 }
 
 .NavItems {
@@ -21,7 +33,7 @@
     list-style: none;
 }
 .NavItems li{
-    padding: 2em;
+    padding: 1em;
 }
 
 a {
@@ -36,11 +48,13 @@ a:hover {
 @media (min-width: 768px) {
 
     .Toolbar {
+        top: 0;
+        left: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: fixed;
-        width: 100vw;
+        width: 100%;
         height: 10%;
         padding-left: .5em;
         z-index: 2;
