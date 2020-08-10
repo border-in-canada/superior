@@ -22,6 +22,8 @@ class App extends Component {
         <Redirect to="/" />
       </Switch>
     );
+
+    console.log(this.props.isAuthenticated);
   
     if (this.props.isAuthenticated) {
       routes = (
