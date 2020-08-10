@@ -6,9 +6,9 @@ import logo from '../../assets/Superior-Grey-Cropped.png';
 
 const home = (props) => {
 
-    const authURI = 'https://auth.superiorrecoveryllc.com/login?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http://localhost:3000/auth/';
+    const authURI = 'https://auth.superiorrecoveryllc.com/login?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://superiorrecoveryllc.com/auth/';
 
-    const signupURI = 'https://auth.superiorrecoveryllc.com/signup?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http://localhost:3000/auth/';
+    const signupURI = 'https://auth.superiorrecoveryllc.com/signup?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://superiorrecoveryllc.com/auth/';
 
     return (
         <div>
