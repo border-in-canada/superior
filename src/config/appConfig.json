@@ -1,0 +1,16 @@
+{
+    "region": "us-west-2",
+    "userPoolBaseUri": "https://auth.superiorrecoveryllc.com",
+    "userPool": "us-west-2_PO8Ifm8LZ",
+    "clientId": "2fg43nmkt8t3gd6b9h7cbogr9l",
+    "callbackUri": "http://localhost:3000/auth/",
+    "logoutURI": "https://auth.superiorrecoveryllc.com/logout?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&logout_uri=https://www.superiorrecoveryllc.com/logout/",
+    "signoutUri": "https://www.superiorrecoveryllc.com",
+    "tokenScopes": [
+        "openid",
+        "email",
+        "profile",
+        "https://api.superiorrecoveryllc.com/"
+    ],
+    "apiUri": "https://api.superiorrecoveryllc.com/"
+}
