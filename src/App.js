@@ -27,6 +27,7 @@ class App extends Component {
       routes = (
         <Switch>
           <Route exact path="/dashboard" component={Dashboard} />
+          <Route path="/auth" component={AuthLoader} />
           <Route path="/create-order/debtor-details" component={DebtorDetails} />
           <Route path="/create-order/vehicle-details" component={VehicleDetails} />
           <Route path="/create-order/order-details" component={OrderDetails} />
