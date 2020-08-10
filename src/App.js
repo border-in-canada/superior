@@ -17,8 +17,8 @@ class App extends Component {
   render() {
     let routes = (
       <Switch>
-        <Route path="/auth" component={AuthLoader} />
         <Route exact path="/" component={Home} />
+        <Route path="/auth" component={AuthLoader} />
         <Redirect to="/" />
       </Switch>
     );
