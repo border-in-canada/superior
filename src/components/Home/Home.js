@@ -2,13 +2,10 @@ import React from 'react';
 import styles from './Home.module.css';
 import image from '../../assets/tow.jpeg';
 import logo from '../../assets/Superior-Grey-Cropped.png';
+import appConfig from '../../config/appConfig.json';
 
 
 const home = (props) => {
-
-    const authURI = 'https://auth.superiorrecoveryllc.com/login?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://superiorrecoveryllc.com/auth/';
-
-    const signupURI = 'https://auth.superiorrecoveryllc.com/signup?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://superiorrecoveryllc.com/auth/';
 
     return (
         <div>
@@ -31,8 +28,8 @@ const home = (props) => {
                 </div>
                 <div className={styles.Footer}>
                     <h4>Servicing the Portland and surrounding area since 1999.</h4><br />
-                    <p><a href={authURI}>Sign in</a> to dispatch an order, view status updates, or view past orders.</p><br />
-                    <a href={signupURI}>Click here to sign up!</a>
+                    <p><a href={appConfig.loginUri}>Sign in</a> to dispatch an order, view status updates, or view past orders.</p><br />
+                    <a href={appConfig.signupUri}>Click here to sign up!</a>
                 </div>
             </div>
         </div>

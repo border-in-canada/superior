@@ -6,6 +6,7 @@ import { withCookies } from 'react-cookie';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../../assets/Superior-Grey-Cropped.png';
+import appConfig from '../../../config/appConfig.json';
 
 class Toolbar extends Component {
 
@@ -17,11 +18,6 @@ class Toolbar extends Component {
 
     render() {
     
-    const authURI = 'https://auth.superiorrecoveryllc.com/login?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http://localhost:3000/auth/';
-
-    
-
-
         return(
         <nav className={styles.Toolbar}>
             {window.screen.width >= 768 ?
@@ -31,7 +27,7 @@ class Toolbar extends Component {
                 <ul>
                     <li><a href="mailto:billing@superiorrecoveryllc.com"><FontAwesomeIcon icon={faEnvelope} size='lg'/></a></li>
                     <li><a href="tel:503-253-0571"><FontAwesomeIcon icon={faPhone} size="lg"/></a></li>
-                    {this.props.isAuthenticated ? <li><a href="/"><span onClick={this.logoutHandler}><FontAwesomeIcon icon={faSignOutAlt} size="lg" /></span></a></li> : <li><a href={authURI}><FontAwesomeIcon icon={faSignInAlt} size="lg" /></a></li>}
+                    {this.props.isAuthenticated ? <li><a href="/"><span onClick={this.logoutHandler}><FontAwesomeIcon icon={faSignOutAlt} size="lg" /></span></a></li> : <li><a href={appConfig.loginUri}><FontAwesomeIcon icon={faSignInAlt} size="lg" /></a></li>}
                     
                 </ul>
             </div>
