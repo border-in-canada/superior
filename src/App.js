@@ -11,18 +11,15 @@ import VehicleDetails from './components/Order/VehicleDetails/VehicleDetails';
 import OrderDetails from './components/Order/OrderDetails/OrderDetails';
 import OrderSummary from './components/Order/OrderSummary/OrderSummary';
 import * as actions from './store/actions/index';
-import { createBrowserHistory } from 'history';
 
 class App extends Component {
 
   render() {
 
-    const history = createBrowserHistory();
-
     let routes = (
-      <Switch history={history}>
+      <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/auth" component={AuthLoader} />
+        <Route path="/auth" component={AuthLoader} />
         <Redirect to="/" />
       </Switch>
     );
