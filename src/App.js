@@ -6,7 +6,6 @@ import styles from './App.module.css';
 import Home from './components/Home/Home';
 import AuthLoader from './components/AuthLoader/AuthLoader';
 import Dashboard from './components/Dashboard/Dashboard';
-// import Logout from './components/Logout/Logout';
 import DebtorDetails from './components/Order/DebtorDetails/DebtorDetails';
 import VehicleDetails from './components/Order/VehicleDetails/VehicleDetails';
 import OrderDetails from './components/Order/OrderDetails/OrderDetails';
@@ -23,7 +22,7 @@ class App extends Component {
     let routes = (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/auth/code" component={AuthLoader} />
+        <Route path="/auth/" component={AuthLoader} />
         <Redirect to="/" />
       </Switch>
     );
