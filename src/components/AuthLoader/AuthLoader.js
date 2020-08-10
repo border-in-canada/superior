@@ -14,6 +14,7 @@ class AuthLoader extends Component {
         if (this.props.location.hash || this.props.location.search) {
             this.props.initSessionFromCallbackURI(window.location.href)
                 .then(session => {
+                    console.log('auth');
                     const URI = appConfig.apiUri + 'me';
                     axios.post(URI, session, { withCredentials: true })
                         .then(res => {
