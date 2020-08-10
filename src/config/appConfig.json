@@ -3,8 +3,8 @@
     "userPoolBaseUri": "https://auth.superiorrecoveryllc.com",
     "userPool": "us-west-2_PO8Ifm8LZ",
     "clientId": "2fg43nmkt8t3gd6b9h7cbogr9l",
-    "callbackUri": "https://superiorrecoveryllc.com/auth/",
-    "logoutURI": "https://auth.superiorrecoveryllc.com/logout?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&logout_uri=https://superiorrecoveryllc.com/logout/",
+    "callbackUri": "https://www.superiorrecoveryllc.com/auth/",
+    "logoutURI": "https://auth.superiorrecoveryllc.com/logout?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&logout_uri=https://www.superiorrecoveryllc.com/logout/",
     "signoutUri": "https://www.superiorrecoveryllc.com",
     "tokenScopes": [
         "openid",
@@ -13,7 +13,7 @@
         "https://api.superiorrecoveryllc.com/"
     ],
     "apiUri": "https://api.superiorrecoveryllc.com/",
-    "loginUri": "https://auth.superiorrecoveryllc.com/login?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://superiorrecoveryllc.com/auth/",
-    "signupUri": "https://auth.superiorrecoveryllc.com/signup?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://superiorrecoveryllc.com/auth/"
+    "loginUri": "https://auth.superiorrecoveryllc.com/login?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://www.superiorrecoveryllc.com/auth/",
+    "signupUri": "https://auth.superiorrecoveryllc.com/signup?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://www.superiorrecoveryllc.com/auth/"
 
 }
