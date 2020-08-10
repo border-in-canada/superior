@@ -17,13 +17,11 @@ class App extends Component {
   render() {
     let routes = (
       <Switch>
-        <Route exact path="/" component={Home} />
         <Route path="/auth" component={AuthLoader} />
+        <Route exact path="/" component={Home} />
         <Redirect to="/" />
       </Switch>
     );
-
-    console.log(this.props.isAuthenticated);
   
     if (this.props.isAuthenticated) {
       routes = (
