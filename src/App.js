@@ -25,7 +25,7 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/auth" component={AuthLoader} />
         {/* <Route path="/logout" component={Logout} /> */}
-        <Redirect to="/" />
+        {/* <Redirect to="/" /> */}
       </Switch>
     );
   
