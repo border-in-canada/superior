@@ -23,7 +23,7 @@ class App extends Component {
     let routes = (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/auth/code?" component={AuthLoader} />
+        <Route path="/auth/code" component={AuthLoader} />
         <Route path="/logout" component={Logout} />
         <Redirect to="/" />
       </Switch>
