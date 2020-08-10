@@ -74,7 +74,7 @@ export const deleteOrderStore = () => {
 
 export const deleteClient = (clientId, history) => {
     return dispatch => {
-        const URL = 'http://localhost:3000/client/' + clientId;
+        const URL = 'https://superiorrecoveryllc.com/client/' + clientId;
         axios.delete(URL, { withCredentials: true })
         .then(response => {
             // dispatch(deleteClientStore());
@@ -88,7 +88,7 @@ export const deleteClient = (clientId, history) => {
 
 export const getOrder = (orderId, history) => {
     return dispatch => {
-        axios.get(`http://localhost:8080/dashboard/order/${orderId}`, { withCredentials: true })
+        axios.get(`https://superiorrecoveryllc.com/dashboard/order/${orderId}`, { withCredentials: true })
             .then(response => {
                 const orderData = response.data.order;
                 dispatch(orderEdit(orderData));
@@ -104,7 +104,7 @@ export const getOrder = (orderId, history) => {
 export const addOrder = (data, history) => {
     return dispatch => {
         const payload = data;
-        axios.post('http://localhost:8080/dashboard/order', payload, { withCredentials: true })
+        axios.post('https://superiorrecoveryllc.com/dashboard/order', payload, { withCredentials: true })
         .then(response => {
             dispatch(deleteOrderStore());
             history.push('/dashboard');
@@ -119,7 +119,7 @@ export const updateOrder = (data, history) => {
     return dispatch => {
         const payload = data;
         const orderId = data.orderId;
-        axios.put(`http://localhost:8080/dashboard/order/${orderId}`, payload, { withCredentials: true })
+        axios.put(`https://superiorrecoveryllc.com/dashboard/order/${orderId}`, payload, { withCredentials: true })
         .then(response => {
             dispatch(deleteOrderStore());
             history.push('/dashboard');
@@ -132,7 +132,7 @@ export const updateOrder = (data, history) => {
 
 export const clearCookie = (history) => {
     return dispatch => {
-        axios.get(`http://localhost:8080/logout`, { withCredentials: true })
+        axios.get(`https://superiorrecoveryllc.com/logout`, { withCredentials: true })
         .then(response => {
             dispatch(clearSession());
             history.push('/dashboard');
