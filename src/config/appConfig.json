@@ -5,7 +5,7 @@
     "clientId": "2fg43nmkt8t3gd6b9h7cbogr9l",
     "callbackUri": "https://superiorrecoveryllc.com/auth/",
     "logoutURI": "https://auth.superiorrecoveryllc.com/logout?client_id=2fg43nmkt8t3gd6b9h7cbogr9l&logout_uri=https://superiorrecoveryllc.com/logout/",
-    "signoutUri": "https://www.superiorrecoveryllc.com",
+    "signoutUri": "https://superiorrecoveryllc.com",
     "tokenScopes": [
         "openid",
         "email",
