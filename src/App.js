@@ -20,6 +20,7 @@ class App extends Component {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="auth" component={AuthLoader} />
+        <Redirect from="/:auth*(/+)" to={pathname.slice(0, -1)} />
         <Redirect to="/" />
       </Switch>
     );
