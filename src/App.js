@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, withRouter, Redirect, Router } from 'react-router-dom';
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Layout from './components/Layout/Layout';
 import styles from './App.module.css';
@@ -17,11 +17,11 @@ class App extends Component {
   render() {
 
     let routes = (
-      <Router>
+      <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/auth" component={AuthLoader} />
-        {/* <Redirect to="/" /> */}
-      </Router>
+        <Route path="/auth" component={AuthLoader} />
+        <Redirect to="/" />
+      </Switch>
     );
   
     if (this.props.isAuthenticated) {
