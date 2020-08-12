@@ -35,9 +35,9 @@ class AuthLoader extends Component {
 
     render() {
 
-        if ((!this.props.location.hash && !this.props.location.search)) {
-            return <Redirect to="/" />
-        }
+        // if ((!this.props.location.hash && !this.props.location.search)) {
+        //     return <Redirect to="/" />
+        // }
 
         return (
             <div className={styles.Container}>
