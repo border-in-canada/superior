@@ -162,7 +162,6 @@ export const authCheckState = () => {
     return dispatch => {
         let cookie = document.cookie.includes('session');
         if (cookie) {
-            console.log('auth success');
             dispatch(authSuccess());
         }
         else {
