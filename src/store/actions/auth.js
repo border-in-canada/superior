@@ -72,19 +72,19 @@ export const deleteOrderStore = () => {
     };
 };
 
-// export const deleteClient = (clientId, history) => {
-//     return dispatch => {
-//         const URL = 'https://superiorrecoveryllc.com/client/' + clientId;
-//         axios.delete(URL, { withCredentials: true })
-//         .then(response => {
-//             // dispatch(deleteClientStore());
-//             history.push('/dashboard/clients');
-//         })
-//         .catch(error => {
-//             dispatch(authFail(error));
-//         })
-//     };
-// };
+export const deleteClient = (clientId, history) => {
+    return dispatch => {
+        const URL = 'https://superiorrecoveryllc.com/client/' + clientId;
+        axios.delete(URL, { withCredentials: true })
+        .then(response => {
+            // dispatch(deleteClientStore());
+            history.push('/dashboard/clients');
+        })
+        .catch(error => {
+            dispatch(authFail(error));
+        })
+    };
+};
 
 export const getOrder = (orderId, history) => {
     return dispatch => {
