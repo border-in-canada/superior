@@ -11,7 +11,6 @@ import appConfig from '../../config/appConfig.json';
 class AuthLoader extends Component {
 
     componentDidMount() {
-        console.log('auth loader');
         if (this.props.location.hash || this.props.location.search) {
             this.props.initSessionFromCallbackURI(window.location.href)
                 .then(session => {
@@ -35,9 +34,9 @@ class AuthLoader extends Component {
 
     render() {
 
-        // if ((!this.props.location.hash && !this.props.location.search)) {
-        //     return <Redirect to="/" />
-        // }
+        if ((!this.props.location.hash && !this.props.location.search)) {
+            return <Redirect to="/" />
+        }
 
         return (
             <div className={styles.Container}>
