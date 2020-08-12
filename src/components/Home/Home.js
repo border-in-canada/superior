@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
-import image from '../../assets/tow.jpg';
 import logo from '../../assets/Superior-Grey-Cropped.png';
+import image from '../../assets/tow.jpg';
 import appConfig from '../../config/appConfig.json';
 
 
