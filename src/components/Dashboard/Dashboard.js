@@ -12,7 +12,7 @@ import axios from 'axios';
 import _ from 'lodash';
 
 const getOrdersForGrid = (currentPage, pagesize, searchString, filterType, callback) => {
-    const uri = `http://localhost:8080/dashboard/orders?filter=${searchString}&by=${filterType}&page=${currentPage}&pagesize=${pagesize}`;
+    const uri = `https://api.superiorrecoveryllc.com/dashboard/orders?filter=${searchString}&by=${filterType}&page=${currentPage}&pagesize=${pagesize}`;
     axios.get(uri, { withCredentials: true })
       .then((response) => {
         callback(response.data.orders, response.data.currentPage, response.data.pagesize, response.data.totalItems)
@@ -37,7 +37,7 @@ class Dashboard extends Component {
     componentDidMount() {
         this.props.authCheck();
         //Initial grid API Call
-        axios.get('http://localhost:8080/dashboard/orders?page=1&pagesize=4', { withCredentials: true } )
+        axios.get('https://api.superiorrecoveryllc.com/dashboard/orders?page=1&pagesize=4', { withCredentials: true } )
         .then(res => {
             this.setState(state => ({
                 data: res.data.orders,
