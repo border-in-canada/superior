@@ -28,8 +28,6 @@ const home = (props) => {
                 </div>
                 <div className={styles.Footer}>
                     <h4>Servicing the Portland and surrounding area since 1999.</h4><br />
-                    <p><a href={appConfig.loginUri}>Sign in</a> to dispatch an order, view status updates, or view past orders.</p><br />
-                    <a href={appConfig.signupUri}>Click here to sign up!</a>
                 </div>
             </div>
         </div>

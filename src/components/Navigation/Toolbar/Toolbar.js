@@ -26,9 +26,7 @@ class Toolbar extends Component {
             <div className={styles.NavItems}>
                 <ul>
                     <li><a href="mailto:billing@superiorrecoveryllc.com"><FontAwesomeIcon icon={faEnvelope} size='lg'/></a></li>
-                    <li><a href="tel:503-253-0571"><FontAwesomeIcon icon={faPhone} size="lg"/></a></li>
-                    {this.props.isAuthenticated ? <li><a href="/"><span onClick={this.logoutHandler}><FontAwesomeIcon icon={faSignOutAlt} size="lg" /></span></a></li> : <li><a href={appConfig.loginUri}><FontAwesomeIcon icon={faSignInAlt} size="lg" /></a></li>}
-                    
+                    <li><a href="tel:503-253-0571"><FontAwesomeIcon icon={faPhone} size="lg"/></a></li>                    
                 </ul>
             </div>
         </nav>
